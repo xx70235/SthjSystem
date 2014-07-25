@@ -137,5 +137,6 @@ public class ThematicOrderQueryComposite extends CustomComponent implements Clic
 //        listeners.add(listener);
        this.presenter = listener;
     }
+    
 
 }
