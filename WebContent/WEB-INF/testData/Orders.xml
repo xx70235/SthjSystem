@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<responseParam>
+		<production>
+<taskID>FS20130408001TP</taskID>
+		     <!--专题产品生产任务单-->
+			<name>2011年北京市农业种植面积覆盖专题</name>
+			<!--专题产品名称-->
+<type>生态环境专题产品编码</type>
+			<!--专题产品类型-->
+			<startDate>2013-06-01</startDate>
+			<!--开始时间，如果选择为某年月日为01-01-->
+			<endDate>2013-07-01</endDate>
+			<range>116.8396,37.0679,120.0916,40.4077</range>
+			<!--空间覆盖范围-->
+			<rangeScale>区域</rangeScale >
+			<!--可选，不同空间尺度-->
+		</production>
+				<production>
+<taskID>FS20130408002TP</taskID>
+		     <!--专题产品生产任务单-->
+			<name>2011年北京市林业种植面积覆盖专题</name>
+			<!--专题产品名称-->
+<type>生态环境专题产品编码</type>
+			<!--专题产品类型-->
+			<startDate>2013-06-01</startDate>
+			<!--开始时间，如果选择为某年月日为01-01-->
+			<endDate>2013-07-01</endDate>
+			<range>116.8396,37.0679,120.0916,40.4077</range>
+			<!--空间覆盖范围-->
+			<rangeScale>区域</rangeScale >
+			<!--可选，不同空间尺度-->
+		</production>
+				<production>
+<taskID>FS20130408003TP</taskID>
+		     <!--专题产品生产任务单-->
+			<name>2011年北京市积雪面积覆盖专题</name>
+			<!--专题产品名称-->
+<type>生态环境专题产品编码</type>
+			<!--专题产品类型-->
+			<startDate>2013-06-01</startDate>
+			<!--开始时间，如果选择为某年月日为01-01-->
+			<endDate>2013-07-01</endDate>
+			<range>116.8396,37.0679,120.0916,40.4077</range>
+			<!--空间覆盖范围-->
+			<rangeScale>区域</rangeScale >
+			<!--可选，不同空间尺度-->
+		</production>
+	</responseParam>
+</root>
