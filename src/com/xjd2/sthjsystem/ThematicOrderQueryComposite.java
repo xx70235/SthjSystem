@@ -111,7 +111,7 @@ public class ThematicOrderQueryComposite extends CustomComponent implements Clic
 		fl.addComponent(endDateSelector);
 
 		// queryButton
-		queryButton = new Button();
+		queryButton = new Button("提交",this);
 		queryButton.setCaption("提交");
 		queryButton.setImmediate(false);
 		queryButton.setWidth("-1px");
