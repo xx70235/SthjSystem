@@ -129,10 +129,8 @@ public class ThematicOrderTableComposite extends CustomComponent
         themticOrderTable.addContainerProperty("name",String.class,  null);
         themticOrderTable.addContainerProperty("productName",String.class,  null);
         themticOrderTable.addContainerProperty("orderDate",Date.class,  null);
-//        themticOrderTable.addContainerProperty("endDate",Date.class,  null);
         themticOrderTable.addContainerProperty("range",String.class,  null);
         themticOrderTable.addContainerProperty("rangeScale",String.class,  null);
-//        themticOrderTable.addContainerProperty("是否接受生产",Boolean.class,  null);
         themticOrderTable.addContainerProperty("status",String.class,  null);
         themticOrderTable.addContainerProperty("operation",OptionGroup.class,  null);
         
@@ -149,9 +147,7 @@ public class ThematicOrderTableComposite extends CustomComponent
         
         themticOrderTable.addValueChangeListener(new Property.ValueChangeListener() {
             public void valueChange(ValueChangeEvent event) {
-//                current.setValue("Selected: " + table.getValue());
                 presenter.showCommonProductInfo((String)themticOrderTable.getItem(themticOrderTable.getValue()).getItemProperty("productName").getValue());
-                
             }
         });
         

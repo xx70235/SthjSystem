@@ -14,8 +14,10 @@ public class CommonProduct implements Serializable {
 	}
 	String id;
 	String name;
+	
 	Date startDate;
 	Date endDate;
+	Date produceDate;
 	String coverRange;
 	String spaceResolution;
 	String timeResolution;
@@ -84,6 +86,13 @@ public class CommonProduct implements Serializable {
 	}
 	public void setPrecision(float precision) {
 		this.precision = precision;
+	}
+	
+	public Date getProduceDate() {
+		return produceDate;
+	}
+	public void setProductDate(Date produceDate) {
+		this.produceDate = produceDate;
 	}
 	
 	
