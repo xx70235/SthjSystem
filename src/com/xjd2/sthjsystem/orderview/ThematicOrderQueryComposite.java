@@ -1,4 +1,4 @@
-package com.xjd2.sthjsystem;
+package com.xjd2.sthjsystem.orderview;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,24 +71,26 @@ public class ThematicOrderQueryComposite extends CustomComponent implements Clic
 		
 		productTypesSelect = new ListSelect();
 		productTypesSelect.setCaption("产品类型：");
-		productTypesSelect.addItem("专题产品1");
-		productTypesSelect.addItem("专题产品2");
-		productTypesSelect.addItem("专题产品3");
-		productTypesSelect.addItem("专题产品4");
-		productTypesSelect.addItem("专题产品5");
-		productTypesSelect.addItem("专题产品111");
-		productTypesSelect.addItem("专题产品12");
-		productTypesSelect.addItem("专题产品13");
-		productTypesSelect.addItem("专题产品14");
-		productTypesSelect.addItem("专题产品51");
-		productTypesSelect.addItem("专题产品16");
-		productTypesSelect.addItem("专题产品17");
-		productTypesSelect.addItem("专题产品18");
-		productTypesSelect.addItem("专题产品19");
-		productTypesSelect.addItem("专题产品121");
-		productTypesSelect.addItem("专题产品123");
-		productTypesSelect.addItem("专题产品134");
-		productTypesSelect.addItem("专题产品125");
+		  productTypesSelect.addItem("生态系统类型面积变化率");
+	        productTypesSelect.addItem("景观破碎度");
+	        productTypesSelect.addItem("景观分离度");
+	        productTypesSelect.addItem("聚集度指数");
+	        productTypesSelect.addItem("景观多样性指数");
+	        productTypesSelect.addItem("人类活动干扰强度");
+	        productTypesSelect.addItem("生态系统宏观结构");
+	        productTypesSelect.addItem("水源涵养量");
+	        productTypesSelect.addItem("风蚀区土壤侵蚀模数");
+	        productTypesSelect.addItem("水蚀区土壤侵蚀模数");
+	        productTypesSelect.addItem("碳固定量");
+	        productTypesSelect.addItem("荒漠化指数");
+	        productTypesSelect.addItem("草地退化指数");
+	        productTypesSelect.addItem("植被水分利用效率");
+	        productTypesSelect.addItem("雪盖变化率");
+	        productTypesSelect.addItem("湖泊面积变化率");
+	        productTypesSelect.addItem("生态系统敏感性指数");
+	        productTypesSelect.addItem("生态系统稳定性指数");
+	        productTypesSelect.addItem("全球环境监测指数");
+	        productTypesSelect.addItem("草原干旱指数");
 		
 		productTypesSelect.setWidth("100%");
 		productTypesSelect.setHeight("350px");

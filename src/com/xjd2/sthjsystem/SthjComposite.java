@@ -12,6 +12,8 @@ import com.vaadin.ui.HorizontalSplitPanel;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.TabSheet;
 import com.vaadin.ui.VerticalLayout;
+import com.xjd2.sthjsystem.dataview.DataComposite;
+import com.xjd2.sthjsystem.orderview.OrdersComposite;
 
 public class SthjComposite extends CustomComponent {
 
@@ -39,6 +41,7 @@ public class SthjComposite extends CustomComponent {
 	private Panel leftPanel;
 	private Panel rightPanel;
 	private OrdersComposite orderComposite;
+	private DataComposite dataComposite;
 	/**
 	 * The constructor should first build the main layout, set the
 	 * composition root and then do any custom initialization.
@@ -162,8 +165,12 @@ public class SthjComposite extends CustomComponent {
 		midTab.addTab(orderComposite).setCaption("订单管理");
 		
 		//TODO: 其他功能面板
-		HorizontalLayout tab2 = new HorizontalLayout();
-		midTab.addTab(tab2).setCaption("数据管理");
+		dataComposite = new  DataComposite();
+		dataComposite.setWidth("1200px");
+		dataComposite.setHeight("100%");
+		
+//		HorizontalLayout tab2 = new HorizontalLayout();
+		midTab.addTab(dataComposite).setCaption("数据管理");
 		
 		HorizontalLayout tab3 = new HorizontalLayout();
 		midTab.addTab(tab3).setCaption("生产任务管理");

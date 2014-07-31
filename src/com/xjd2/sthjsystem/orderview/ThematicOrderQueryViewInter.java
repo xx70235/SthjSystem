@@ -1,4 +1,4 @@
-package com.xjd2.sthjsystem;
+package com.xjd2.sthjsystem.orderview;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.xjd2.sthjsystem.presenter;
 
-import com.xjd2.sthjsystem.ThematicDataViewInter;
+import com.xjd2.sthjsystem.dataview.ThematicDataViewInter;
 
 public class ThematicDataPresenter implements ThematicDataViewInter {
 

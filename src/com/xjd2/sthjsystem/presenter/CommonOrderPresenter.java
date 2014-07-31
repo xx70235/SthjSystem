@@ -2,12 +2,12 @@ package com.xjd2.sthjsystem.presenter;
 
 import java.util.List;
 
-import com.xjd2.sthjsystem.CommonOrderTableComposite;
-import com.xjd2.sthjsystem.CommonOrderTableViewInter;
-import com.xjd2.sthjsystem.CommonProductOrderComposite;
-import com.xjd2.sthjsystem.CommonProductOrderViewInter;
 import com.xjd2.sthjsystem.instance.CommonProduct;
 import com.xjd2.sthjsystem.model.CommonOrderModel;
+import com.xjd2.sthjsystem.orderview.CommonOrderTableComposite;
+import com.xjd2.sthjsystem.orderview.CommonOrderTableViewInter;
+import com.xjd2.sthjsystem.orderview.CommonProductOrderComposite;
+import com.xjd2.sthjsystem.orderview.CommonProductOrderViewInter;
 
 public class CommonOrderPresenter implements CommonOrderTableViewInter, CommonProductOrderViewInter{
 	CommonProductOrderComposite cpoComposite;
