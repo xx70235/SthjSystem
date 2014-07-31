@@ -44,8 +44,8 @@ public class DataComposite extends CustomComponent
     private Accordion leftAccordion;
     private ThematicDataComposite tdComposite;
     private CommonDataComposite cdComposite;
-    private CommonProductOrderComposite cpoComposite;
-    private ThematicOrderTableComposite totComposite;
+//    private CommonProductOrderComposite cpoComposite;
+    private ThematicDataTableComposite tdtComposite;
     private CommonOrderTableComposite cotComposite;
     private ThematicOrderPresenter toPresenter;
     private ThematicOrderModel toModel;
@@ -179,9 +179,9 @@ public class DataComposite extends CustomComponent
 
                 if (caption.equals(accordionCaption1))
                 {
-                    if (totComposite != null)
+                    if (tdtComposite != null)
                     {
-                        totComposite.setVisible(true);
+                        tdtComposite.setVisible(true);
                     }
                     // else
                     // {
@@ -195,9 +195,9 @@ public class DataComposite extends CustomComponent
                 }
                 else if (caption.equals(accordionCaption2))
                 {
-                    if (totComposite != null)
+                    if (tdtComposite != null)
                     {
-                        totComposite.setVisible(true);
+                        tdtComposite.setVisible(true);
                     }
                     // else
                     // {
@@ -249,11 +249,11 @@ public class DataComposite extends CustomComponent
         rightPanel.setContent(verticalLayout_3);
 
         // Themtaic Order Table
-        totComposite = new ThematicOrderTableComposite();
-        totComposite.setImmediate(false);
-        totComposite.setWidth("100.0%");
-        totComposite.setHeight("100.0%");
-        verticalLayout_3.addComponent(totComposite);
+        tdtComposite = new ThematicDataTableComposite();
+        tdtComposite.setImmediate(false);
+        tdtComposite.setWidth("100.0%");
+        tdtComposite.setHeight("100.0%");
+        verticalLayout_3.addComponent(tdtComposite);
 
         cotComposite = new CommonOrderTableComposite();
         cotComposite.setImmediate(false);

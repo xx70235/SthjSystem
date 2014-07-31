@@ -67,6 +67,7 @@ public class OrdersComposite extends CustomComponent {
 		toqComposite.setPresenter(toPresenter);
 		totComposite.setPresenter(toPresenter);
 		
+		
 		coPresenter = new CommonOrderPresenter(cpoComposite,cotComposite,coModel);
 		cpoComposite.setPresenter(coPresenter);
 		cotComposite.setPresenter(coPresenter);

@@ -4,4 +4,5 @@ public interface CommonOrderTableViewInter
 {
  void queryCommonProductDetails(String id);
  void orderCommonProduct();
+ 
 }
