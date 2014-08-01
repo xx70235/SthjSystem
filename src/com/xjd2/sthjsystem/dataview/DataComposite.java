@@ -16,11 +16,13 @@ import com.vaadin.ui.TabSheet.SelectedTabChangeEvent;
 import com.vaadin.ui.TabSheet.SelectedTabChangeListener;
 import com.vaadin.ui.VerticalLayout;
 import com.xjd2.sthjsystem.model.CommonOrderModel;
+import com.xjd2.sthjsystem.model.ThematicDataQueryModel;
 import com.xjd2.sthjsystem.model.ThematicOrderModel;
 import com.xjd2.sthjsystem.orderview.CommonOrderTableComposite;
 import com.xjd2.sthjsystem.orderview.CommonProductOrderComposite;
 import com.xjd2.sthjsystem.orderview.ThematicOrderTableComposite;
 import com.xjd2.sthjsystem.presenter.CommonOrderPresenter;
+import com.xjd2.sthjsystem.presenter.ThematicDataPresenter;
 import com.xjd2.sthjsystem.presenter.ThematicOrderPresenter;
 
 public class DataComposite extends CustomComponent
@@ -47,8 +49,8 @@ public class DataComposite extends CustomComponent
 //    private CommonProductOrderComposite cpoComposite;
     private ThematicDataTableComposite tdtComposite;
     private CommonOrderTableComposite cotComposite;
-    private ThematicOrderPresenter toPresenter;
-    private ThematicOrderModel toModel;
+    private ThematicDataPresenter tdPresenter;
+    private ThematicDataQueryModel tdModel;
     private CommonOrderPresenter coPresenter;
     private CommonOrderModel coModel;
 
@@ -68,13 +70,12 @@ public class DataComposite extends CustomComponent
     {
         buildMainLayout();
         setCompositionRoot(mainLayout);
-        // toModel = new ThematicDataModel();
+         tdModel = new ThematicDataQueryModel();
         // coModel = new CommonOrderModel();
-        // mvpģʽ
-        // toPresenter = new
-        // ThematicOrderPresenter(toqComposite,totComposite,toModel);
-        // toqComposite.setPresenter(toPresenter);
-        // totComposite.setPresenter(toPresenter);
+//         mvpģʽ
+         tdPresenter = new ThematicDataPresenter(tdComposite,tdtComposite,tdModel);
+         tdComposite.setPresenter(tdPresenter);
+         tdtComposite.setPresenter(tdPresenter);
         //
         // coPresenter = new
         // CommonOrderPresenter(cpoComposite,cotComposite,coModel);

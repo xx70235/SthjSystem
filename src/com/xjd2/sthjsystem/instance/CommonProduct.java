@@ -21,6 +21,7 @@ public class CommonProduct implements Serializable {
 	String coverRange;
 	String spaceResolution;
 	String timeResolution;
+	String temporal;
 	float precision;
 	
 	public enum ProductStatus
@@ -94,6 +95,18 @@ public class CommonProduct implements Serializable {
 	public void setProductDate(Date produceDate) {
 		this.produceDate = produceDate;
 	}
+    public String getTemporal()
+    {
+        return temporal;
+    }
+    public void setTemporal(String temporal)
+    {
+        this.temporal = temporal;
+    }
+    public void setProduceDate(Date produceDate)
+    {
+        this.produceDate = produceDate;
+    }
 	
 	
 
