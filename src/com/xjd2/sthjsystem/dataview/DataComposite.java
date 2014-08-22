@@ -48,11 +48,15 @@ public class DataComposite extends CustomComponent
     private CommonDataComposite cdComposite;
 //    private CommonProductOrderComposite cpoComposite;
     private ThematicDataTableComposite tdtComposite;
-    private CommonOrderTableComposite cotComposite;
+    private CommonDataTableComposite cdtComposite;
     private ThematicDataPresenter tdPresenter;
     private ThematicDataQueryModel tdModel;
-    private CommonOrderPresenter coPresenter;
-    private CommonOrderModel coModel;
+    
+//TODO:    
+//    private CommonDataPresenter cdPresenter;
+//    private CommonDataQueryModel cdModel;
+    
+
 
     private static String accordionCaption1 = "本地专题产品查询";
     private static String accordionCaption2 = "本地共性产品查询";
@@ -196,9 +200,9 @@ public class DataComposite extends CustomComponent
                 }
                 else if (caption.equals(accordionCaption2))
                 {
-                    if (tdtComposite != null)
+                    if (cdtComposite != null)
                     {
-                        tdtComposite.setVisible(true);
+                        cdtComposite.setVisible(true);
                     }
                     // else
                     // {
@@ -212,9 +216,25 @@ public class DataComposite extends CustomComponent
                 }
                 else if (caption.equals(accordionCaption3))
                 {
-                    if (cotComposite != null)
+                    if (cdtComposite != null)
                     {
-                        cotComposite.setVisible(true);
+                        cdtComposite.setVisible(true);
+                    }
+                    // else
+                    // {
+                    // cotComposite = new CommonOrderTableComposite();
+                    // cotComposite.setImmediate(false);
+                    // cotComposite.setWidth("100.0%");
+                    // cotComposite.setHeight("100.0%");
+                    // verticalLayout_3.addComponent(cotComposite);
+                    // cotComposite.setVisible(true);
+                    // }
+                }
+                else if (caption.equals(accordionCaption4))
+                {
+                    if (cdtComposite != null)
+                    {
+                        cdtComposite.setVisible(true);
                     }
                     // else
                     // {
@@ -249,19 +269,20 @@ public class DataComposite extends CustomComponent
         verticalLayout_3.setMargin(true);
         rightPanel.setContent(verticalLayout_3);
 
-        // Themtaic Order Table
+        // Themtaic Data Table
         tdtComposite = new ThematicDataTableComposite();
         tdtComposite.setImmediate(false);
         tdtComposite.setWidth("100.0%");
         tdtComposite.setHeight("100.0%");
         verticalLayout_3.addComponent(tdtComposite);
 
-        cotComposite = new CommonOrderTableComposite();
-        cotComposite.setImmediate(false);
-        cotComposite.setWidth("100.0%");
-        cotComposite.setHeight("100.0%");
-        verticalLayout_3.addComponent(cotComposite);
-        cotComposite.setVisible(false);
+        //Common Data Table
+        cdtComposite = new CommonDataTableComposite();
+        cdtComposite.setImmediate(false);
+        cdtComposite.setWidth("100.0%");
+        cdtComposite.setHeight("100.0%");
+        verticalLayout_3.addComponent(cdtComposite);
+        cdtComposite.setVisible(false);
 
         return rightPanel;
     }
@@ -276,13 +297,11 @@ public class DataComposite extends CustomComponent
         leftAccordion.addTab(tdComposite, accordionCaption1, null);
         leftAccordion.addTab(cdComposite, accordionCaption2, null);
 
-        HorizontalLayout tab3 = new HorizontalLayout();
-        leftAccordion.addTab(tab3, accordionCaption3, null);
-
-        HorizontalLayout tab4 = new HorizontalLayout();
-        leftAccordion.addTab(tab4, accordionCaption4, null);
-        // leftAccordion.addTab(ltiComposite,accordionCaption2, null);
-        // leftAccordion.addTab(cpoComposite, accordionCaption3, null);
+//        HorizontalLayout tab3 = new HorizontalLayout();
+//        leftAccordion.addTab(tab3, accordionCaption3, null);
+//
+//        HorizontalLayout tab4 = new HorizontalLayout();
+//        leftAccordion.addTab(tab4, accordionCaption4, null);
     }
 
 }
